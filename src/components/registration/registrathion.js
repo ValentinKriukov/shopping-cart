@@ -6,8 +6,11 @@ const Registrathion =()=>{
         <div className='reg'>
             <h1>Регистрация</h1>
             <form>
-                <input name='email' type='text' placeholder='Enter your email...'/>
-                <input name='password' type='password' placeholder='Enter your password...'/>
+                <br />
+                <input className='email' type='text' placeholder='Логин'/>
+                <br />
+                <input className='password' type='password' placeholder='Пароль'/>
+                <br />
                 <button> Зарегистрироваться</button>
             </form>
         </div>
