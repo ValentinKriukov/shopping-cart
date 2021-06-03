@@ -5,8 +5,11 @@ import SearchPanel from '../search-panel';
 import PostStatusFilter from '../post-status-filter';
 import PostList from '../post-list';
 import PostAddForm from '../post-add-form';
+import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import Registrathion from '../registration';
 
 import './app.css';
+
 
 export default class App extends Component {
     constructor(props){
@@ -121,7 +124,9 @@ export default class App extends Component {
             const visiblePosts=this.filterPosts(this.searchPost(data, term), filter);
 
             return (
-            <div className="app">
+                <Router>
+                    
+       <div className="app">
             <AppHeader
             liked={liked}
             allPosts={allPosts}/>
@@ -139,7 +144,13 @@ export default class App extends Component {
                     onToggleLiked={this.onToggleLiked}/>
             <PostAddForm
                 onAdd={this.addItem}/>
+                
+                <Switch>
+                    <Route exact path='/reg' component={Registrathion}/>
+                </Switch>
         </div>
+                </Router>
+     
         
     )
         }

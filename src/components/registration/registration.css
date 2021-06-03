@@ -1,0 +1,14 @@
+.reg {
+margin: 0 auto;
+}
+
+.reg h1 {
+  text-align: center;
+  padding: 20px 35px 20px 35px;
+  font-size: 1.2rem;
+}
+
+.reg button {
+    background-color: #eaf5fc;
+    border-radius: 8px;
+}

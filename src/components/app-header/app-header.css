@@ -1,5 +1,5 @@
 .app-header {
-  align-items: flex-end;
+  align-items: stretch;
   justify-content: space-between;
 
 }
